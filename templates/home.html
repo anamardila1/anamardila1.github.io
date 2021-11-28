@@ -1,0 +1,53 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+<title>Ukulele by Ear - Home</title>
+{% endblock %}
+
+{% block header %}
+<h1>Ukulele by Ear</h1>
+<p class="col-xs-12">Mission: Train to recognize common ukulele chords by ear without having to look them up online. Then, test your knowledge through our quiz.</p>
+<h5>Explore by clicking the buttons below or using the navigation bar above.</h5>
+{% endblock %}
+
+{% block uniqueToPage %}
+<!-- card section  -->
+<div class="row">
+	<div class="col-sm"></div>
+	<div class="col-sm clickable-card">
+		<a href="http://127.0.0.1:5000/learn">
+			<div class="card smaller-card mx-auto shadow">
+				<img src="https://www.dropbox.com/s/5zxxd4l9lqikocf/ukulele.png?raw=1" class="card-img-top mx-auto smaller-image" alt="">
+				<div class="card-body">
+					<h3>Learn</h3>
+				</div>
+            </div>
+        </a>
+    </div>
+    <div class="col-sm clickable-card">
+        <a href="http://127.0.0.1:5000/compare">
+            <div class="card smaller-card mx-auto shadow">
+                <img src="https://www.dropbox.com/s/2h42e8qmavrni48/ear.png?raw=1" class="card-img-top mx-auto smaller-image" alt="">
+                <div class="card-body">
+                    <h3>Compare</h3>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="col-sm clickable-card">
+    	<a href="http://127.0.0.1:5000/quiz_instructions">
+    		<div class="card smaller-card mx-auto shadow">
+    			<img src="https://www.dropbox.com/s/x6sdsdijafefj4d/quiz.png?raw=1" class="card-img-top mx-auto smaller-image" alt="">
+    			<div class="card-body">
+    				<h3>Quiz</h3>
+    			</div>
+            </div>
+        </a>
+    </div>
+    <div class="col-sm"></div>
+</div>
+{% endblock %}
+
+{% block scriptToUse %}
+<script src="{{ url_for('static', filename='home.js') }}"></script>
+{% endblock %}

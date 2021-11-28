@@ -1,0 +1,48 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+<title>Ukulele by Ear - Learn</title>
+{% endblock %}
+
+{% block header %}
+<h1 class="title">Learn</h1>
+<p class="col-xs-12">
+	Which chord would you like to learn?
+</p>
+{% endblock %}
+
+{% block uniqueToPage %}
+<!-- chord buttons section  -->
+<div class="row chords">
+	<div class="col-sm"></div>
+	<div class="col-sm d-grid">
+		<button type="button" class="btn btn-lg btn-primary chord" id="C Major">C Major</button>
+		<br>
+		<button type="button" class="btn btn-lg btn-primary chord" id="D Major">D Major</button>
+		<br>
+		<button type="button" class="btn btn-lg btn-primary chord" id="D Minor">D Minor</button>
+		<br>
+		<button type="button" class="btn btn-lg btn-primary chord" id="E Major">E Major</button>
+		<br>
+		<button type="button" class="btn btn-lg btn-primary chord" id="E Minor">E Minor</button>
+		<br>
+	</div>
+	<div class="col-sm d-grid">
+		<button type="button" class="btn btn-lg btn-primary chord" id="F Major">F Major</button>
+		<br>
+		<button type="button" class="btn btn-lg btn-primary chord" id="Gb Minor">Gb Minor</button>
+		<br>
+		<button type="button" class="btn btn-lg btn-primary chord" id="G Major">G Major</button>
+		<br>
+		<button type="button" class="btn btn-lg btn-primary chord" id="A Major">A Major</button>
+		<br>
+		<button type="button" class="btn btn-lg btn-primary chord" id="A Minor">A Minor</button>
+		<br>
+	</div>
+	<div class="col-sm"></div>
+</div>
+{% endblock %}
+
+{% block scriptToUse %}
+<script src="{{ url_for('static', filename='learn.js') }}"></script>
+{% endblock %}

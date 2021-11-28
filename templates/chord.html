@@ -1,0 +1,63 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+<title>Ukulele by Ear - Chord</title>
+{% endblock %}
+
+{% block header %}
+{% block chordTitle %}{% endblock %}
+<p class="col-xs-12">
+	<button class="btn btn-outline-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample"><b>Click here for instructions, recommended approach, and expectation for the quiz.</b></button>
+</p>
+<div class="collapse" id="collapseExample">
+	<div class="row">
+		<div class="col-sm-2"></div>
+		<div class="col-sm-8">
+			<div class="card card-body">
+				<ul>
+					<li><b>Instructions:</b> Press the &#9654; button under the finger placement chart below to hear the chord being played. Navigate through the chords by clicking the blue arrow buttons or using the arrow keys on the keyboard.</li>
+					<li><b>Recommended Approach:</b> Play the chord multiple times until you feel like you can comfortably recognize the chord by ear. If you're having a hard time identifying the difference between chords, head to the COMPARE page.</li>
+					<li><b> Expectation for Quiz:</b> The quiz will only test auditory recognition of the chord, not the finger placement. 
+				</ul>
+			</div>
+		</div>
+		<div class="col-sm-2"></div>
+	</div>
+</div>
+{% endblock %}
+
+{% block uniqueToPage %}
+<!-- main media section  -->
+<div class="row justify-content-md-center">
+	<div class="col-sm-2 align-self-center">
+		<span title="Previous Chord"><button type="button" class="btn btn-primary" id="prevButton">&#8592;</button></span>
+	</div>
+	<div class="col-sm-2">
+		<div class="card">
+			{% block chordImg %}{% endblock %}
+		</div>
+	</div>
+	<div class="col-sm-2 align-self-center">
+		<span title="Next Chord"><button type="button" class="btn btn-primary" id="nextButton">&#8594;</button></span>
+	</div>
+</div>
+<div class="row justify-content-md-center">
+	<div class="col-sm">
+		<section id="curr_audio"></section>
+	</div>
+</div>
+<br>
+<div class="row justify-content-md-center">
+	<div class="col col-sm-2">
+		<button type="button" class="btn btn-primary" id="learnButton">Back to Learn</button>
+	</div>
+</div>
+{% endblock %}
+
+{% block scriptToUse %}
+<script src="{{ url_for('static', filename='chord.js') }}"></script>
+
+<script>
+	const chord = JSON.parse('{{ chord|tojson }}')
+</script>
+{% endblock %}

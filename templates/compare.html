@@ -1,0 +1,66 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+<title>Ukulele by Ear - Compare</title>
+{% endblock %}
+
+{% block header %}
+<h1>Compare</h1>
+<p class="col-xs-12">
+	Pick two chords below to compare how they sound.<br>
+	<button class="btn btn-outline-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Tip</button>
+</p>
+<div class="collapse" id="collapseExample">
+	<div class="row">
+		<div class="col-sm-1"></div>
+		<div class="col-sm-10">
+			<div class="card card-body">Major chords typically produce a warmer, resolute sound while minor chords typically produce a more somber, unsettled sound. A major chord is also slightly higher-pitched than its corresponding minor chord. Try comparing D Major to D Minor and see if you can spot these differences.</div>
+		</div>
+		<div class="col-sm-1"></div>
+	</div>
+</div>
+{% endblock %}
+
+{% block uniqueToPage %}
+<!-- chord comparison section  -->
+<div class="row justify-content-md-center">
+	<div class="col-sm-3">
+		<h3 class="chord-name" id="chord1_name">Chord 1</h3>
+		<section id="audio1"></section>
+		<br>
+		<div class="dropdown">
+			<label id="label1" for="chords1">Choose a chord:</label>
+			<select class="chord-select" id="chords1" name="chords1">
+			</select>
+			<br><br>
+			<button type="button" class="btn btn-primary submit" id="submit1">Get Audio</button>
+		</div>
+	</div>
+	<div class="col-sm-3">
+		<h3 class="chord-name" id="chord2_name">Chord 2</h3>
+		<section id="audio2"></section>
+		<br>
+		<div class="dropdown">
+			<label id="label2" for="chords2">Choose a chord:</label>
+			<select class="chord-select" id="chords2" name="chords2">
+			</select>
+			<br><br>
+			<button type="button" class="btn btn-primary submit" id="submit2">Get Audio</button>
+		</div>
+	</div>
+</div>
+<br><br>
+<div class="row justify-content-md-center">
+	<div class="col-sm-3">
+		<button type="button" class="btn btn-outline-dark" id="playBoth">Play Chord 1, then Chord 2</button>
+	</div>
+</div>
+{% endblock %}
+
+{% block scriptToUse %}
+<script src="{{ url_for('static', filename='compare.js') }}"></script>
+
+<script>
+	const chords = JSON.parse('{{ chords|tojson }}')
+</script>
+{% endblock %}

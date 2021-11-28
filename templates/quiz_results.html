@@ -1,0 +1,43 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+<title>Ukulele by Ear - Quiz Results</title>
+{% endblock %}
+
+{% block header %}
+<h1>Quiz Results</h1>
+{% endblock %}
+
+{% block uniqueToPage %}
+<!-- results section  -->
+<div class="row justify-content-md-center instructions">
+	<div class="col-sm-4">
+		<h2 class="description">Number correct:</h2>
+		<h1 class="results score-font" id="score"></h1>
+	</div>
+	<div class="col-sm-4">
+		<h2 class="description">What you missed:</h2>
+		<section class="results" id="missed_chords"></section>
+	</div>
+</div>
+
+<br></br>
+
+<div class="row">
+	<div class="col-sm">
+	</div>
+	<div class="col-sm">
+		<button type="button" class="btn btn-primary" id="takeAgainButton">Click here to take quiz again</button>
+	</div>
+	<div class="col-sm">
+	</div>
+</div>
+{% endblock %}
+
+{% block scriptToUse %}
+<script src="{{ url_for('static', filename='quiz_results.js') }}"></script>
+
+<script>
+	const review_chords = JSON.parse('{{ review_chords|tojson }}')
+</script>
+{% endblock %}s

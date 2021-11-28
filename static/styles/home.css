@@ -1,0 +1,197 @@
+/* ==========================================================================
+   Global Overrides
+========================================================================== */
+* {
+  box-sizing: border-box;
+}
+
+.scrollable-menu {
+    height: auto;
+    max-height: 200px;
+    overflow-x: hidden;
+}
+
+/* ==========================================================================
+   Global Styles
+========================================================================== */
+body {
+	text-align: center;
+	font-family: 'Source Sans Pro', sans-serif;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background-color: #F7F7F7;
+	
+}
+
+/* ==========================================================================
+   Header Styles
+========================================================================== */
+header {
+	padding-top: 1.75rem;
+	padding-bottom: 1.75rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+
+header h1 {
+	font-family: 'Libre Baskerville', serif;
+	color: #401935;
+	padding-bottom: 1.75rem;
+	font-size: 3.75rem;
+}
+
+header h5 {
+	font-family: 'Libre Baskerville', serif;
+	color: #22222299;
+	font-weight: 400;
+}
+
+header p {
+	font-family: 'Libre Baskerville', serif;
+	font-size: 1.5rem;
+	color: #222;
+	text-transform: none;
+	font-weight: 400;
+	letter-spacing: 0;
+	padding: 0 6.25rem;
+	line-height: 1.5;
+}
+
+@media (max-width: 576px) {
+    header p {
+    	padding: 0 2.25rem;
+    }
+}
+
+/* ==========================================================================
+   Nav Styles
+========================================================================== */
+
+.nav-wrapper {
+	margin-bottom: 3.75rem;
+}
+
+.nav-wrapper a {
+	color: #5E5E5E;
+	text-decoration: none;
+	font-weight: 600;
+}
+
+nav a {
+	text-transform: uppercase;
+	font-size: 0.75rem;
+	letter-spacing: 0.08em;
+	/*padding: 1.25rem 1.875rem;*/
+	display: inline-block;
+}
+
+/* ==========================================================================
+   Headings and Paragraph
+========================================================================== */
+
+p {
+	color: #873672;
+	font-size: 0.75rem;
+	text-transform: uppercase;
+	letter-spacing: 0.08rem;
+	font-weight: 600;
+}
+
+h2 {
+	font-size: 1.2rem;
+	color: black;
+}
+
+h3 {
+	font-size: 1rem;
+	font-weight: 300;
+	font-style: italic;
+	color: #E2B8D7;
+}
+
+/* ==========================================================================
+   Miscellaneous
+========================================================================== */
+
+.clickable-card a {
+	text-decoration: none;
+}
+
+.smaller-card{
+	width: 70%;
+}
+
+.smaller-image{
+	width: 80%!important;
+	padding-top: 1rem;
+}
+
+.correct_result{
+	color: green;
+}
+
+.wrong_result{
+	color: red;
+}
+
+.btn-big-font{
+	font-size: 2.25rem!important;
+}
+
+.q-command{
+	color: black;
+	font-style: normal;
+	padding-top: 1rem;
+	font-size: 2rem;
+}
+
+.special-padding{
+	padding-bottom:1rem ;
+}
+
+.thick-border{
+	border: 5px solid rgba(0,0,0,.125)!important;
+}
+
+.instructions{
+	font-family: 'Libre Baskerville', serif;
+	font-size: 1.5rem;
+	color: #222;
+	text-transform: none;
+	font-weight: 400;
+	letter-spacing: 0;
+	padding: 0 6.25rem;
+	line-height: 1.5;
+}
+
+.results{
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+}
+
+.score-font{
+	font-size: 4rem;
+}
+
+.chord-name{
+	font-style: normal;
+	color: #873672;
+}
+
+.missed-chord{
+	font-size:2rem;
+	letter-spacing: 0.08rem;
+}
+
+.description{
+	color: #873672;
+	font-size: 1.5rem;
+}
+
+.move-left{
+	margin-left: 0.75rem;
+}
+
+li{
+	text-align: left;
+}

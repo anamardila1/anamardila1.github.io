@@ -1,0 +1,38 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+<title>Ukulele by Ear - Quiz Instructions</title>
+{% endblock %}
+
+{% block header %}
+<h1 class="title">Quiz Instructions</h1>
+{% endblock %}
+
+{% block uniqueToPage %}
+<!-- button section  -->
+<div class="row justify-content-md-center special-padding">
+	<div class="col-sm-9">
+		<div class="card thick-border">
+			<div class="card-body">
+				<ul class="instructions">
+					<li> <b>Purpose:</b> Test your auditory recognition of the 10 chords from the learn page through a multiple-choice quiz.</li>
+					<li> <b>Number of Questions</b>: 10</li>
+					<li> <b>During the Quiz:</b> Listen carefully to the provided sound clip. Then, choose the chord you believe is playing.</li>
+					<li> <b>Results:</b> After submitting the final question, your total score and a list of the missed chords will be shown.</li>
+					<br>
+					<b>Press start when you're ready!</b>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="row justify-content-md-center">
+	<div class="col-sm-3 big-test d-grid">
+		<button type="button" class="btn btn-primary btn-lg btn-block btn-big-font" id="startButton">Start</button>
+	</div>
+</div>
+{% endblock %}
+
+{% block scriptToUse %}
+<script src="{{ url_for('static', filename='learn.js') }}"></script>
+{% endblock %}

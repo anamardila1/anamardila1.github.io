@@ -1,0 +1,62 @@
+{
+	"results": [{
+		"id": 1,
+		"chord_name": "C Major",
+		"chord_img": "https://www.dropbox.com/s/yt8aeiih7m6r35k/C_MAJOR.jpg?raw=1",
+		"chord_audio": "https://www.dropbox.com/s/4k5f7ng0vv4soa9/C-Major-Chord.mp3?raw=1"
+	},
+	{
+		"id": 2,
+		"chord_name": "D Major",
+		"chord_img": "https://www.dropbox.com/s/qvznnpbnaanml5a/D_MAJOR.jpg?raw=1",
+		"chord_audio": "https://www.dropbox.com/s/qxsf9290gg50hhn/D%20Major%20Chord.mp3?raw=1"
+	},
+	{
+		"id": 3,
+		"chord_name": "D Minor",
+		"chord_img": "https://www.dropbox.com/s/xdwr801rnfsjxxn/D_MINOR.jpg?raw=1",
+		"chord_audio": "https://www.dropbox.com/s/jvirpkrskp894v9/D%20Minor%20Chord.mp3?raw=1"
+	},
+	{
+		"id": 4,
+		"chord_name": "E Major",
+		"chord_img": "https://www.dropbox.com/s/9acdzi6bgqk34ry/E_MAJOR.jpg?raw=1",
+		"chord_audio": "https://www.dropbox.com/s/v8vtt8vj7vn8cyh/E%20Major%20Chord.mp3?raw=1"
+	},
+	{
+		"id": 5,
+		"chord_name": "E Minor",
+		"chord_img": "https://www.dropbox.com/s/b3h16fkm5rzht3x/E_MINOR.jpg?raw=1",
+		"chord_audio": "https://www.dropbox.com/s/4fkqnhhpre5xa0e/E%20Minor%20Chord.mp3?raw=1"
+	},
+	{
+		"id": 6,
+		"chord_name": "F Major",
+		"chord_img": "https://www.dropbox.com/s/7i0y348ogerqvab/F_MAJOR.jpg?raw=1",
+		"chord_audio": "https://www.dropbox.com/s/gjffl04xrmtqhp2/F%20Major%20Chord.mp3?raw=1"
+	},
+	{
+		"id": 7,
+		"chord_name": "Gb Minor",
+		"chord_img": "https://www.dropbox.com/s/wnikw9vvt04fz5a/Gb_MINOR.jpg?raw=1",
+		"chord_audio": "https://www.dropbox.com/s/uxdtynpfh4bj1wg/G-flat%20Minor%20Chord.mp3?raw=1"
+	},
+	{
+		"id": 8,
+		"chord_name": "G Major",
+		"chord_img": "https://www.dropbox.com/s/6ga3cjt6mbsvpvg/G_MAJOR.jpg?raw=1",
+		"chord_audio": "https://www.dropbox.com/s/cqtl9kta8o8ukjx/G%20Major%20Chord.mp3?raw=1"
+	},
+	{
+		"id": 9,
+		"chord_name": "A Major",
+		"chord_img": "https://www.dropbox.com/s/xfrvv14kx09q7f2/A_MAJOR.jpg?raw=1",
+		"chord_audio": "https://www.dropbox.com/s/96yrr5ny1ehu5er/A%20Major%20Chord.mp3?raw=1"
+	},
+	{
+		"id": 10,
+		"chord_name": "A Minor",
+		"chord_img": "https://www.dropbox.com/s/itoraapr3ern99d/A_MINOR.jpg?raw=1",
+		"chord_audio": "https://www.dropbox.com/s/ueamfphlj6mecbk/A%20Minor%20Chord.mp3?raw=1"
+	}]
+}
