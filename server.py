@@ -22,7 +22,7 @@ current_id = 10
 review_chords = []
 
 # create a home route
-@app.route('/')
+@app.route('anamardila1.github.io')
 
 # create home method
 def home():
