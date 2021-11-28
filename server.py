@@ -22,11 +22,11 @@ current_id = 10
 review_chords = []
 
 # create a home route
-@app.route('anamardila1.github.io')
+@app.route('/')
 
 # create home method
 def home():
-    return render_template('home.html')
+    return render_template('index.html')
 
 # make learn route
 @app.route('/learn')
